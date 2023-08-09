@@ -1,0 +1,79 @@
+// 側欄
+.sidebar {
+  width: 23%;
+  background: $gray-100;
+
+  .logo {
+    padding-left: 9.5%;
+  }
+
+  &-link {
+    padding-left: 9.5%;
+
+    &:hover,
+    &.active {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 32px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $success;
+      }
+    }
+  }
+}
+
+.user {
+  padding-left: 9.5%;
+
+  &-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// 主內容
+.admin {
+  width: 77%;
+}
+
+.table {
+  margin-bottom: 63px;
+
+  a:hover {
+    color: $gray-900;
+  }
+}
+
+.page-link.arrow {
+  color: $success;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    color: $success;
+  }
+
+}
+
+// modal
+.modal {
+  img {
+    width: 141px;
+    height: 141px;
+  }
+
+  &-email {
+    margin-bottom: 20px;
+  }
+}
+
+.accordion-button span {
+  padding: 4px 8px;
+  background-color: $gray-100;
+}

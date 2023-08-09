@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    color: $gray-900;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $gray-900;
+
+    &:hover,
+    &:active,
+    &.active {
+        color: $success;
+    }
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
