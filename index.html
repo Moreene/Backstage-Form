@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>後台表單</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/Backstage-Form/assets/index-67c2eca4.js"></script>
+  <link rel="stylesheet" href="/Backstage-Form/assets/index-6e94ab38.css">
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <aside class="sidebar d-flex flex-column py-5">
+      <h1 class="mb-5"><a href="#" class="logo"><img src="data:image/png;base64,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" alt="logo"></a></h1>
+      <ol>
+        <li class="mb-4">
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
+            <span class="material-icons me-3">insert_chart</span>Dashboard</a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
+            <span class="material-icons me-3">forum</span>Question</a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
+            <span class="material-icons me-3">assignment</span>Assignment</a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
+            <span class="material-icons me-3">video_library</span>Course</a>
+        </li>
+        <li class="mb-4">
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative active">
+            <span class="material-icons me-3">group</span>Admin</a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
+            <span class="material-icons me-3">settings</span>Settings</a>
+        </li>
+      </ol>
+      <div class="mt-auto">
+        <div class="user d-flex">
+          <img src="/Backstage-Form/assets/andychen-f14fef59.jpeg" alt="Andy" class="user-img d-block img-fluid rounded-circle me-3">
+          <div>
+            <h2 class="h6 fw-bold mb-1">Andy Chen</h2>
+            <p class="text-secondary mb-0">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="admin p-5">
+      <header class="d-flex justify-content-between mb-6">
+        <div class="d-flex align-items-center">
+          <h2 class="h4 fw-bold mb-0 me-6">Admin</h2>
+          <a href="#" class="d-flex fw-bold">
+            <span class="material-icons me-2 link-success">add</span>Add New Admin</a>
+        </div>
+        <div class="d-flex">
+          <a href="#" class="d-flex"><span class="material-icons my-auto me-4">search</span></a>
+          <a href="#" class="d-flex"><span class="material-icons my-auto">notifications_active</span></a>
+        </div>
+      </header>
+      <main>
+        <!-- table -->
+        <table class="table table-hover">
+          <thead class="border-bottom border-dark">
+            <tr class="fw-bold">
+              <th scope="col" class="d-flex border-bottom-0">ID<span
+                  class="material-icons text-success ms-2">arrow_downward</span></th>
+              <th scope="col" class="w-25">Name</th>
+              <th scope="col" class="w-25">Email</th>
+              <th scope="col">Verified</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="fw-normal"><a href="#" data-bs-toggle="modal" data-bs-target="#Modal">#1</a></th>
+              <td><a href="#" data-bs-toggle="modal" data-bs-target="#Modal">Emir Wicks</a></td>
+              <td><a href="#" data-bs-toggle="modal" data-bs-target="#Modal">emir.wicks@mail.com</a></td>
+              <td><a href="#" data-bs-toggle="modal" data-bs-target="#Modal">Yes</a></td>
+              <td><a href="#" data-bs-toggle="modal" data-bs-target="#Modal"><span
+                    class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#2</th>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#3</th>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#4</th>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#5</th>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#6</th>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#7</th>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#8</th>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#9</th>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row" class="fw-normal">#10</th>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td><a href="#"><span class="material-icons">visibility</span></a></td>
+              <td><a href="#"><span class="material-icons">edit</span></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+              <div class="d-flex">
+                <img src="/Backstage-Form/assets/emir-3d7a4b39.jpeg" alt="Emir" class="img-fluid d-block me-4">
+                <ol class="w-100">
+                  <li class="d-flex justify-content-between mb-2">
+                    <h2 class="h6 mb-0">#1</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </li>
+                  <li>
+                    <p class="mb-0">Admin</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="fs-4 fw-bold mb-0">Emir Wicks</p>
+                  </li>
+                  <li class="modal-email">
+                    <p class="fs-6 text-secondary">emir.wicks@mail.com</p>
+                  </li>
+                  <li>
+                    <div class="accordion accordion-flush" id="accordionFlush">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header mb-5" id="flush-headingOne">
+                          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="fs-6 d-inline-block">Verified</span>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                          <div class="accordion-body p-0">
+                            <button type="button" class="btn btn-outline-danger py-2 px-5 me-3"
+                              data-bs-dismiss="modal">Deactivate</button>
+                            <button type="button" class="btn btn-success py-2 px-5">Edit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navigation -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination d-flex justify-content-end">
+            <li class="page-item">
+              <a class="page-link arrow" href="#" aria-label="Previous">
+                <span aria-hidden="true">&lt;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link arrow" href="#" aria-label="Next">
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+
+  
+  <script>
+    // modal
+    var Modal = document.getElementById('Modal')
+    Modal.addEventListener('show.bs.modal', function (event) {
+      var button = event.relatedTarget
+      // var recipient = button.getAttribute('data-bs-whatever')
+      // var modalTitle = Modal.querySelector('.modal-title')
+      // var modalBodyInput = Modal.querySelector('.modal-body input')
+      // modalTitle.textContent = 'New message to ' + recipient
+      // modalBodyInput.value = recipient
+    })
+  </script>
+
+</body>
+
+</html>
