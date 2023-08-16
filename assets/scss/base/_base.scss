@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', 'Roboto', 'Noto Sans TC', sans-serif;
+    font-family: 'Lato', 'Roboto Mono', monospace, sans-serif;
     line-height: 1.5;
     color: $gray-900;
 }
@@ -19,6 +19,7 @@ a {
 img {
     display: inline-block;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 ul,

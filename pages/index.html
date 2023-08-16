@@ -12,11 +12,10 @@
 </head>
 
 <body>
-
   <div class="d-flex">
-    <aside class="sidebar d-flex flex-column py-5">
+    <nav class="sidebar d-flex flex-column py-5">
       <h1 class="mb-5"><a href="#" class="logo"><img src="../assets/images/logo.png" alt="logo"></a></h1>
-      <ol>
+      <ul>
         <li class="mb-4">
           <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
             <span class="material-icons me-3">insert_chart</span>Dashboard</a>
@@ -41,7 +40,7 @@
           <a href="#" class="d-flex align-items-center fw-bold sidebar-link position-relative">
             <span class="material-icons me-3">settings</span>Settings</a>
         </li>
-      </ol>
+      </ul>
       <div class="mt-auto">
         <div class="user d-flex">
           <img src="../assets/images/andychen.jpeg" alt="Andy" class="user-img d-block img-fluid rounded-circle me-3">
@@ -51,7 +50,7 @@
           </div>
         </div>
       </div>
-    </aside>
+    </nav>
     <div class="admin p-5">
       <header class="d-flex justify-content-between mb-6">
         <div class="d-flex align-items-center">
@@ -66,7 +65,7 @@
       </header>
       <main>
         <!-- table -->
-        <table class="table table-hover">
+        <table class="table table-hover align-middle">
           <thead class="border-bottom border-dark">
             <tr class="fw-bold">
               <th scope="col" class="d-flex border-bottom-0">ID<span
@@ -167,42 +166,38 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-5">
               <div class="d-flex">
-                <img src="../assets/images/emir.jpeg" alt="Emir" class="img-fluid d-block me-4">
-                <ol class="w-100">
-                  <li class="d-flex justify-content-between mb-2">
+                <div class="flex-shrink-0">
+                  <img src="../assets/images/emir.jpeg" alt="Emir" class="d-block h-100 me-4">
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between">
                     <h2 class="h6 mb-0">#1</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </li>
-                  <li>
-                    <p class="mb-0">Admin</p>
-                  </li>
-                  <li class="mb-2">
-                    <p class="fs-4 fw-bold mb-0">Emir Wicks</p>
-                  </li>
-                  <li class="modal-email">
-                    <p class="fs-6 text-secondary">emir.wicks@mail.com</p>
-                  </li>
-                  <li>
-                    <div class="accordion accordion-flush" id="accordionFlush">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header mb-5" id="flush-headingOne">
-                          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span class="fs-6 d-inline-block">Verified</span>
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
-                          <div class="accordion-body p-0">
-                            <button type="button" class="btn btn-outline-danger py-2 px-5 me-3"
-                              data-bs-dismiss="modal">Deactivate</button>
-                            <button type="button" class="btn btn-success py-2 px-5">Edit</button>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                  <p class="mb-0">Admin</p>
+                  <p class="h4 fw-bold mb-2">Emir Wicks</p>
+                  <p class="fs-6 text-secondary">emir.wicks@mail.com</p>
+                  <div class="accordion accordion-flush" id="accordionFlush">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <span class="fs-6 d-inline-block">Verified</span>
+                        </button>
+                      </h2>
                     </div>
-                  </li>
-                </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body pt-5 px-0">
+                    <button type="button" class="btn btn-outline-danger py-2 px-5 me-4"
+                      data-bs-dismiss="modal">Deactivate</button>
+                    <button type="button" class="btn btn-success py-2 px-5">Edit</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
